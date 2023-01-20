@@ -1,0 +1,727 @@
+/*======================== Laptop Navbar ========================*/
+header{
+    width: 100% !important;
+    justify-content: space-between;
+    align-items: center;
+    transition: .7s;
+    background-color: #fff;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    box-shadow: 1px 1px #ddd;
+}
+  
+.navbar-fixed-top.scrolled .laptop_navbar nav ul li a {
+    color:#000;
+}
+.navbar-fixed-top.scrolled .laptop_navbar nav ul li a:hover{
+    color:rgb(95, 95, 95);
+}
+
+.navbar-brand img{
+    width: 140px;
+}
+
+.laptop_navbar .scroll_logo{
+    display: none;
+}
+.laptop_navbar .top_logo{
+    display: block;
+}
+
+.navbar-fixed-top.scrolled .laptop_navbar .scroll_logo{
+    display: block;
+}
+.navbar-fixed-top.scrolled .laptop_navbar .top_logo{
+    display: none;
+}
+
+.laptop_navbar nav ul li a{
+    color: #333333;
+    text-decoration: none;
+    transition: .07s;
+    padding-bottom: 5px;
+    
+}
+.laptop_navbar nav ul li a:hover{
+    color: #333333;
+    border-bottom: 3px solid rgb(236, 5, 5);
+    
+}
+.laptop_navbar nav ul li a.active{
+    border-bottom: 3px solid rgb(236, 5, 5);
+    color: #000;
+    font-weight: 600;
+}
+.laptop_navbar nav ul li{
+    margin: 20px;
+}
+.laptop_navbar ul li ul{
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px #ddd;
+    width: 310px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+    max-height: 480px;
+    overflow: auto;
+
+    margin-left: -60px;
+
+}
+.laptop_navbar ul li ul li{
+    list-style: none;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(165, 165, 165);
+    padding-top: 7px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+.laptop_navbar ul li ul li a{
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+    transition: .03s;
+    width: 280px;
+    transition: 0.5s;
+    border-bottom: none;
+}
+.laptop_navbar ul li ul li a:hover{
+    color: #000;
+    margin-left: 15px;
+    border-bottom: none;
+}
+.laptop_navbar ul li ul li a span{
+    min-width: 250px !important;
+}
+.sub_menu{
+    display: none;
+}
+.laptop_navbar ul li:hover .sub_menu{
+    display: block;
+    position: absolute;
+}
+
+.laptop_navbar ul li ul li a .fa-arrow-right{
+    transition: 0.5s !important;
+    display: none;
+    margin-left: 220px !important;
+}
+.laptop_navbar ul li ul li a:hover .fa-arrow-right{
+    
+    
+    position: absolute;
+    margin-top: -20px;
+
+}
+
+@media(min-width:1024px){
+    .mobile_navbar{
+        display: none;
+    }
+}
+/*======================== Mobile Navbar ========================*/
+@media(max-width:768px){
+    .laptop_navbar{
+        display: none;
+    }
+    .mobile_navbar{
+        display: block;
+    }
+}
+.mobile_navbar ul li ul li{
+    list-style: none;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(165, 165, 165);
+    padding-top: 7px;
+    padding-bottom: 15px;
+}
+.mobile_navbar ul li ul{
+    border: none;
+    background-color: rgb(236, 236, 236);
+}
+.mobile_navbar .fa-arrow-down{
+    margin-left: 240px;
+}
+.mobile_navbar .mobile_logo{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/*======================== Banner Section ========================*/
+
+.banner h1{
+    margin-top: -500px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(207, 7, 7);
+    
+}
+.banner p{
+    margin-left: 0;
+}
+.banner img{
+    width: 70%;
+    margin-top: 139px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about{
+    background-color: rgb(248, 246, 245);
+}
+.about h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.about{
+    box-sizing: border-box;
+}
+.about p{
+    font-size: 25px;
+    margin-left: 130px;
+}
+.h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.products p{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.products .item{
+    display: inline-block;
+    width: 32%;
+    margin-bottom: 10px;
+}
+
+.products .item img{
+    width: 100%;
+}
+/*======================== Technical Expertise Section ========================*/
+
+.covid_19 h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.covid_19 p{
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.owl-nav{
+    margin-top: 0px;
+}
+.owl-nav button span{
+    font-size: 47px;
+    background: #ddd !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0px !important;
+    border-radius: 100% !important;
+    padding-bottom: 4px !important;
+    color: #000;
+    transition: 0.5s;
+}
+.owl-nav button span:hover{
+    font-size: 47px ;
+    background: #0012a9 !important;
+    padding-left: 25px ;
+    padding-right: 25px ;
+    padding-top: 0px !important;
+    border-radius: 100% !important;
+    padding-bottom: 4px !important;
+    color: #fff;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+    font-size: 47px !important;
+    background: #ddd !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 3px !important;
+    border-radius: 100% !important;
+    padding-bottom: 8px !important;
+    color: #fff !important;
+    padding: 0 !important;
+}
+
+.global img{
+    width: 100%;
+    height: 700px;
+}
+.global h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.global p{
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+/*======================== Leadership Team Section ========================*/
+
+
+.leadership h1{
+    margin-bottom: 50px;
+}
+.leadership img{
+    width: 300px;
+    height: auto;
+}
+.leadership h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+    text-align: left;
+}
+.leadership p{
+    font-weight: 600;
+    font-size: 17px;
+    text-align: left;
+}
+
+.leadership .btn .fa-arrow-right{
+    font-size: 20px;
+    background-color: #0012a9;
+    border-radius: 100%;
+    color: #fff;
+    padding: 20px;
+    margin-right: 15px;
+}
+
+.leadership .btn{
+    transition: 0.7s !important;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 40px;
+}
+
+.leadership .btn:hover{
+    background-color: #0012a9;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    transform: translate(0,0);    
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.gallery a{
+    display: inline-block;
+    width: 32%;
+}
+
+.gallery a img{
+    width: 100%;
+    margin-bottom: 5px;
+    width: 414px;
+    height: 414px;
+}
+.workforce{
+    background-image: url(../img/200.png);
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+.workforce h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+.workforce h2{
+    font-weight: 900;
+    font-size: 120px;
+    color: #0012a9;
+}
+.workforce h3{
+    font-weight: 900;
+    color: #0012a9;
+    font-size: 40px;
+}
+.sales h1{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.sales .manager i{
+    font-size: 40px;
+    color: rgb(201, 7, 7);
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.sales .manager .info b{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(201, 7, 7);
+    margin-right: 10px;
+}
+.sales .manager .info p{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(201, 7, 7);
+    margin: 0;
+}
+
+.sales .d_exe i{
+    font-size: 40px;
+    color: rgb(7, 98, 201);
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.sales .d_exe .info b{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(7, 98, 201);
+    margin-right: 10px;
+}
+.sales .d_exe .info p{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(7, 98, 201);
+    margin: 0;
+}
+
+.sales .m_exe i{
+    font-size: 40px;
+    color: rgb(122, 53, 250);
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.sales .m_exe .info b{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(122, 53, 250);
+    margin-right: 10px;
+}
+.sales .m_exe .info p{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(122, 53, 250);
+    margin: 0;
+}
+
+.sales .s_exe i{
+    font-size: 40px;
+    color: rgb(9, 180, 61);
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.sales .s_exe .info b{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(9, 180, 61);
+    margin-right: 10px;
+}
+.sales .s_exe .info p{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(9, 180, 61);
+    margin: 0;
+}
+
+.sales .re i{
+    font-size: 40px;
+    color: rgb(7, 98, 201);
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.sales .re .info b{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(7, 98, 201);
+    margin-right: 10px;
+}
+.sales .re .info p{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(7, 98, 201);
+    margin: 0;
+}
+
+.sales .merch i{
+    font-size: 40px;
+    color: rgb(122, 53, 250);
+    margin-top: 16px;
+    margin-right: 10px;
+}
+.sales .merch .info b{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(122, 53, 250);
+    margin-right: 10px;
+}
+.sales .merch .info p{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(122, 53, 250);
+    margin: 0;
+}
+.sales img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.sales p{
+    margin-left: 0;
+}
+.stren{
+    background-color: rgb(240, 239, 239);
+    background-image: url(../img/200.png);
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.stren h1{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.stren ul li{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.our_distribution p{
+    margin: 0;
+    font-weight: 600;
+}
+.our_distribution .yello h1, .our_distribution .yello h3{
+    color: rgb(228, 175, 1);
+    font-weight: 700;
+}
+.our_distribution .red h1, .our_distribution .red h3{
+    color: rgb(252, 22, 6);
+    font-weight: 700;
+}
+.our_distribution .color h1, .our_distribution .color h3{
+    color: rgb(6, 162, 252);
+    font-weight: 700;
+}
+.location{
+    background-color: rgb(240, 239, 239);
+    background-image: url(../img/200.png);
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.location p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.location .map iframe{
+    width: 800px;
+    height: 600px;
+}
+
+
+
+@media(max-width:425px){
+    .post img{
+        width: 400px !important;
+        height: auto !important;
+    }
+    .banner img{
+        width: 100%;
+        margin-top: 75px;
+    }
+    .banner h1{
+        font-size: 30px;
+        margin-top: 0px !important;
+        margin-bottom: 10px;
+    }
+    .about h1{
+        font-size: 30px !important;
+    }
+    .about p{
+        font-size: 17px;
+        margin-left: auto;
+    }
+    .milestones h1{
+        font-size: 30px !important;
+    }
+    .milestones p{
+        font-size: 18px;
+    }
+    .history img {
+        width: 360px;
+        height: auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .history p{
+        font-size: 18px;
+    }
+    .fz{
+        font-size: 18px !important;
+    }
+    .owl-nav button span{
+        font-size: 34px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .owl-nav button span:hover{
+        font-size: 34px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .owl-theme .owl-nav [class*=owl-]:hover{
+        font-size: 34px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .global h1{
+        font-size: 30px;
+    }
+    .global img{
+        width: 400px;
+        height: 300px;
+    }
+    .leadership h4,p{
+        margin-left: 50px;
+    }
+    .products p{
+        font-size: 18px;
+        margin-left: 0 !important;
+    }
+    
+    .covid_19 p{
+        margin-left: 0;
+    }
+    .global p{
+        margin-left: 0;
+    }
+    .products .item{
+        width: 32% !important;
+    }
+    .gallery a{
+        display: inline-block;
+        width: 95%;
+    }
+    .location .map iframe{
+        width: 400px;
+        height: 400px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================== Footer Section ========================*/
+
+footer{
+    background-color: #000;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+footer h4{
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+footer p{
+    margin-left: 0;
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(253, 0, 0);
+}
+footer p a:hover{
+    color: rgb(253, 0, 0);
+    border-bottom: 1px solid rgb(253, 0, 0);
+}
+
+footer h2{
+    margin-bottom: 30px;
+}
+
+footer ul li{
+    list-style-type: disclosure-closed;
+    margin-bottom: 10px;
+
+}
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+footer .social a{
+    text-decoration: none;
+    color: #fff;
+}
+footer .social i{
+    font-size: 40px;
+    margin-right: 15px;
+}
+footer .copyright{
+    color: rgb(153, 153, 153);
+    margin-top: 40px;
+}
+footer .copyright img{
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    
+}
+footer .copyright .made{
+    position: absolute;
+    right: 10%;
+    margin-top: -30px;
+}
+
+
+.scroll_top{
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 9999;
+}
+.scroll_top a{
+    text-decoration: none;color: #0012a9;
+    background-color: transparent;
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 100%;
+}
+
