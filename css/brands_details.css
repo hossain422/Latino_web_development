@@ -267,6 +267,9 @@ header{
 
 
 @media(max-width:425px){
+    .details .show{
+        height: 400px;
+    }
     .related .card{
         width: 98%;
     }
@@ -276,6 +279,9 @@ header{
     .small-img {
         left: 0px;
     }
+    .small-img .icon-left, .small-img .icon-right {
+    margin: auto -5px;
+  }
 }
 
 
