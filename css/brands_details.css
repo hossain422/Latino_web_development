@@ -178,10 +178,8 @@ header{
 }
   
 .small-img {
-    width: 350px;
-    height: 70px;
+    width: 100%;
     margin-top: 10px;
-    position: relative;
     left: 25px;
 }
   
@@ -201,30 +199,24 @@ header{
   
   .small-img .icon-left:hover, .small-img .icon-right:hover { opacity: .5; }
   
-  .small-container {
-    width: 310px;
-    height: 70px;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
+
   
-  .small-container div {
-    width: 800%;
-    position: relative;
-  }
-  
+ 
   .small-container .show-small-img {
-    width: 70px;
+    width: 120px;
     height: 70px;
-    margin-right: 6px;
     cursor: pointer;
-    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
   }
-  
-  .small-container .show-small-img:last-of-type { margin-right: 0; }
+.small-img .item{
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
+.small-container .show-small-img:last-of-type { margin-right: 0; }
 
 .details{
     padding-top: 145px;
@@ -264,6 +256,17 @@ header{
     color: rgb(255, 0, 0);
 }
 
+.gallery_mobile_view{
+    display: none;
+}
+.gallery_laptop_view{
+    display: block;
+}
+
+
+
+
+/* ===================== Responsive Design ========================= */
 
 
 @media(max-width:425px){
@@ -280,8 +283,20 @@ header{
         left: 0px;
     }
     .small-img .icon-left, .small-img .icon-right {
-    margin: auto -5px;
-  }
+        margin: auto -5px;
+    }
+    .small-img .item{
+        display: inline-block;
+        width: 32%;
+        text-align: center;
+    }
+    
+    .gallery_mobile_view{
+        display: block;
+    }
+    .gallery_laptop_view{
+        display: none;
+    }
 }
 
 
