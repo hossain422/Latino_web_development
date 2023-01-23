@@ -26,6 +26,7 @@ header{
 
 .navbar-brand img{
     width: 140px;
+    margin-top: 20px;
 }
 
 .laptop_navbar .scroll_logo{
@@ -51,11 +52,11 @@ header{
 }
 .laptop_navbar nav ul li a:hover{
     color: #333333;
-    border-bottom: 3px solid rgb(236, 5, 5);
+    border-bottom: 3px solid green;
     
 }
 .laptop_navbar nav ul li a.active{
-    border-bottom: 3px solid rgb(236, 5, 5);
+    border-bottom: 3px solid green;
     color: #000;
     font-weight: 600;
 }
