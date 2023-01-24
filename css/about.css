@@ -180,9 +180,11 @@ header{
 .banner p{
     margin-left: 0;
 }
+.banner{
+    padding-top: 163px;
+}
 .banner img{
-    width: 70%;
-    margin-top: 139px;
+    width: 97%;
     text-align: center;
     margin-bottom: 20px;
 }
