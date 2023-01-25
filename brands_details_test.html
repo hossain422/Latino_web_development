@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/xzoom.css">
     <link rel="stylesheet" href="css/slider-pro.min.css">
     <link rel="stylesheet" href="css/examples.css">
+    <script>
+      var bleep = new Audio();
+      bleep.src = "bleep.mp3";
+    </script>
 </head>
 <body>
   <header class="navbar-fixed-top">
@@ -319,16 +323,16 @@
             </div>
         
             <div class="sp-thumbnails">
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image1_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image2_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image3_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image4_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image5_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image6_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image7_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image8_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image9_thumbnail.jpg"/>
-              <img class="sp-thumbnail" src="https://bqworks.net/slider-pro/images/image10_thumbnail.jpg"/>
+              <img class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image1_thumbnail.jpg"/>
+              <img  class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image2_thumbnail.jpg"/>
+              <img class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image3_thumbnail.jpg"/>
+              <img class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image4_thumbnail.jpg"/>
+              <img  class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image5_thumbnail.jpg"/>
+              <img class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image6_thumbnail.jpg"/>
+              <img class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image7_thumbnail.jpg"/>
+              <img class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image8_thumbnail.jpg"/>
+              <img  class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image9_thumbnail.jpg"/>
+              <img class="sp-thumbnail sound" src="https://bqworks.net/slider-pro/images/image10_thumbnail.jpg"/>
             </div>
             </div>
 
@@ -338,6 +342,22 @@
           
         </div>
     </section>
+
+
+    <ul>
+      <li>
+        <a class="sound" href="" onmousedown="bleep.play()">Home</a>
+      </li>
+      <li>
+        <a  href="" onmousedown="bleep.play()">About</a>
+      </li>
+      <li>
+        <a href="" onmousedown="bleep.play()">Gallery</a>
+      </li>
+      <li>
+        <a href="" onmousedown="bleep.play()">Contact</a>
+      </li>
+    </ul>
 
 
 
@@ -476,5 +496,43 @@
         });
       });
     </script>
+
+
+<script>
+  $(document).ready(function() {
+    
+    var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+    var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+  
+    $(".sound").mousedown(function() {
+      audio2.load();
+      audio2.play();
+    });
+    
+    $(".sound").mouseup(function() {
+      audio.load();
+      audio.play();
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+    
+    var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+    var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+  
+    $(".sp-arrow").mousedown(function() {
+      audio2.load();
+      audio2.play();
+    });
+    
+    $(".sp-arrow").mouseup(function() {
+      audio.load();
+      audio.play();
+    });
+  });
+</script>
+
   </body>
 </html>
