@@ -13,6 +13,24 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific.css">
     <link rel="stylesheet" href="css/simple-lightbox.min.css">
+
+    <script>
+      $(document).ready(function() {
+    
+    var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+    var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+  
+    $(".sl-image").mousedown(function() {
+      audio2.load();
+      audio2.play();
+    });
+    
+    $(".sl-image").mouseup(function() {
+      audio.load();
+      audio.play();
+    });
+  });
+    </script>
 </head>
 <body>
   <header class="navbar-fixed-top">
@@ -173,26 +191,26 @@
          <div class="gallery"> 
 
           <a href="img/g1-1.jpg" class="big" rel="rel1">
-            <img src="img/g1-1.jpg" alt="" title="Image 1">
+            <img class="sound" src="img/g1-1.jpg" alt="" title="Image 1">
           </a>
           <a href="img/g2-1.jpg" class="big" rel="rel1">
-            <img src="img/g2-1.jpg" alt="" title="Image 1">
+            <img class="sound" src="img/g2-1.jpg" alt="" title="Image 1">
           </a>
           
           <a href="img/g3.jpg" class="big" rel="rel1">
-            <img src="img/g3.jpg" alt="" title="Image 1">
+            <img class="sound" src="img/g3.jpg" alt="" title="Image 1">
           </a>
           
           <a href="img/g4-1.jpg" class="big" rel="rel1">
-            <img src="img/g4-1.jpg" alt="" title="Image 1">
+            <img class="sound" src="img/g4-1.jpg" alt="" title="Image 1">
           </a>
           
           <a href="img/g5-1.jpg" class="big" rel="rel1">
-            <img src="img/g5-1.jpg" alt="" title="Image 1">
+            <img class="sound" src="img/g5-1.jpg" alt="" title="Image 1">
           </a>
           
           <a href="img/g6-1.jpg" class="big" rel="rel1">
-            <img src="img/g6-1.jpg" alt="" title="Image 1">
+            <img class="sound" src="img/g6-1.jpg" alt="" title="Image 1">
           </a>          
         </div>
 
@@ -206,23 +224,23 @@
             <div class="gallery"> 
 
               <a href="img/s1.jpg" class="big" rel="rel1">
-                <img src="img/s1.jpg" alt="" title="Image 1">
+                <img class="sound" src="img/s1.jpg" alt="" title="Image 1">
               </a>
               
               <a href="img/s2.jpg" class="big" rel="rel1">
-                <img src="img/s2.jpg" alt="" title="Image 1">
+                <img class="sound" src="img/s2.jpg" alt="" title="Image 1">
               </a>
               
               <a href="img/s3.jpg" class="big" rel="rel1">
-                <img src="img/s3.jpg" alt="" title="Image 1">
+                <img class="sound" src="img/s3.jpg" alt="" title="Image 1">
               </a>
               
               <a href="img/s4.jpg" class="big" rel="rel1">
-                <img src="img/s4.jpg" alt="" title="Image 1">
+                <img class="sound" src="img/s4.jpg" alt="" title="Image 1">
               </a>
               
               <a href="img/s5.jpg" class="big" rel="rel1">
-                <img src="img/s5.jpg" alt="" title="Image 1">
+                <img class="sound" src="img/s5.jpg" alt="" title="Image 1">
               </a>          
             </div>
     
@@ -236,26 +254,26 @@
               <div class="gallery"> 
   
                 <a href="img/s6.jpg" class="big" rel="rel1">
-                  <img src="img/s6.jpg" alt="" title="Image 1">
+                  <img class="sound" src="img/s6.jpg" alt="" title="Image 1">
                 </a>
                 
                 <a href="img/s7.jpg" class="big" rel="rel1">
-                  <img src="img/s7.jpg" alt="" title="Image 1">
+                  <img class="sound" src="img/s7.jpg" alt="" title="Image 1">
                 </a>
                 
                 <a href="img/s8.jpg" class="big" rel="rel1">
-                  <img src="img/s8.jpg" alt="" title="Image 1">
+                  <img class="sound" src="img/s8.jpg" alt="" title="Image 1">
                 </a>
                 
                 <a href="img/s9.jpg" class="big" rel="rel1">
-                  <img src="img/s9.jpg" alt="" title="Image 1">
+                  <img class="sound" src="img/s9.jpg" alt="" title="Image 1">
                 </a>
                 
                 <a href="img/s10.jpg" class="big" rel="rel1">
-                  <img src="img/s10.jpg" alt="" title="Image 1">
+                  <img class="sound" src="img/s10.jpg" alt="" title="Image 1">
                 </a>          
                 <a href="img/s11.jpg" class="big" rel="rel1">
-                  <img src="img/s11.jpg" alt="" title="Image 1">
+                  <img class="sound" src="img/s11.jpg" alt="" title="Image 1">
                 </a>          
               </div>
       
@@ -412,6 +430,48 @@ var gallery = $('.gallery a').simpleLightbox({
     /* options */
 });
 </script>
+
+
+<script>
+  $(document).ready(function() {
+    
+    var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+    var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+  
+    $(".sound").mousedown(function() {
+      audio2.load();
+      audio2.play();
+    });
+    
+    $(".sound").mouseup(function() {
+      audio.load();
+      audio.play();
+    });
+  });
+</script>
+
+
+<!-- 
+<script>
+  $(document).ready(function() {
+    
+    var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+    var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+  
+    $(".sl-image").mousedown(function() {
+      audio2.load();
+      audio2.play();
+    });
+    
+    $(".sl-image").mouseup(function() {
+      audio.load();
+      audio.play();
+    });
+  });
+</script> -->
+
+
+
 
   </body>
 </html>
