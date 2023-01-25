@@ -248,12 +248,10 @@ header{
     .gallery_laptop_view{
         display: none;
     }
-    .slider-pro p.sp-layer{
-        font-size: 30px !important;
-    }
+    
     .sp-slide .sp-layer{
         width: 100% !important;
-        height: 240px !important;
+        height: 342px !important;
         /* padding-top: 70px; */
         transform-origin: bottom left !important;
         margin-bottom: inherit !important;
@@ -268,9 +266,10 @@ header{
     .sp-thumbnail-container{
         width: 27.5% !important;
         height: 70px !important;
+        margin: 8px !important;
     }
     .sp-mask{
-        height: 460px !important;
+        height: 550px !important;
     }
     .sp-image-container{
         height: 200px !important;
@@ -281,7 +280,7 @@ header{
         width: 100% !important;
     }
     .sp-slide{
-        height: 460px !important;
+        height: 550px !important;
     }
     .sp-horizontal .sp-next-arrow, .sp-horizontal .sp-previous-arrow{
         margin-top: -125px;

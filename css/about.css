@@ -188,6 +188,9 @@ header{
     text-align: center;
     margin-bottom: 20px;
 }
+.banner .img{
+    margin-top: -175px;
+}
 .about{
     background-color: rgb(248, 246, 245);
 }
@@ -630,7 +633,12 @@ header{
         width: 400px;
         height: 400px;
     }
-    
+    .banner .img{
+        margin-top: 0px;
+    }
+    .banner{
+        padding-top: 40px;
+    }
     
 }
 
