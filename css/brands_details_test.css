@@ -184,7 +184,7 @@ header{
 .sp-slide .sp-layer{
     white-space: inherit !important;
     right: 0 !important;
-    width: 300px !important;
+    width: 29% !important;
     height: 100% !important;
     margin-top: -5px;
     transform: scale(1) !important;
@@ -207,11 +207,26 @@ header{
     /* display: inline-block; */
     width: 100% !important;
 }
-/* .sp-image-container, .sp-slide, .sp-mask, #example3, .sp-slide{
-    width: 100% !important;
+.sp-image-container, .sp-slide, .sp-mask, #example3, .sp-slide{
+    /* width: 100% !important; */
     max-width: 100% !important;
-} */
+    margin-bottom: 20px;
+}
+.sp-mask, .sp-slide, .sp-image-container{
+    height: 500px !important;
+}
 
+.sp-image-container{
+    width: 70% !important;
+}
+.sp-image-container img{
+    height: 100% !important;
+    margin-top: 0 !important;
+}
+
+.sp-horizontal .sp-next-arrow{
+    margin-right: 32%;
+}
 /* ===================== Responsive Design ========================= */
 
 
@@ -251,7 +266,7 @@ header{
     
     .sp-slide .sp-layer{
         width: 100% !important;
-        height: 342px !important;
+        height: 60% !important;
         /* padding-top: 70px; */
         transform-origin: bottom left !important;
         margin-bottom: inherit !important;
@@ -272,7 +287,7 @@ header{
         height: 550px !important;
     }
     .sp-image-container{
-        height: 200px !important;
+        height: 36% !important;
         width: 100% !important;
     }
     .sp-image-container img{
@@ -280,10 +295,13 @@ header{
         width: 100% !important;
     }
     .sp-slide{
-        height: 550px !important;
+        height: 566px !important;
     }
     .sp-horizontal .sp-next-arrow, .sp-horizontal .sp-previous-arrow{
         margin-top: -168px;
+    }
+    .sp-horizontal .sp-next-arrow{
+        margin-right: 0 !important;
     }
     
 }
